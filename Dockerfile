@@ -9,5 +9,7 @@ RUN apt-get autoclean
 RUN apt-get clean
 RUN rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
+ENV HOME /root
+
 WORKDIR /data
 VOLUME ["/data"]
